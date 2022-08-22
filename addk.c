@@ -1,14 +1,23 @@
 #include <stdio.h>
-int find_largest (int a,int b)
+  int main()
 {
-int c;
-if(a<b) 
-{
-c=b;
-}
-else
-{
-c=a;
-}
-return c;
-}
+  int n;
+  int arr[1000];
+  int sum=0;
+
+  printf("Enter the size of the array");
+    scanf("%d",&n);
+
+  printf("Enter the elements in arrays");
+  for(int i=0;i<=n;i++)
+    {
+      scanf("%d",&arr[i]);
+    }
+  
+  for(int i=0;i<=n;i++)
+    {
+      sum=sum+arr[i];
+    }
+  printf("The sum of the arrays %d",sum);
+  return 0;
+  }
